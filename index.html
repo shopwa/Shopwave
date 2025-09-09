@@ -185,3 +185,30 @@ renderProducts();
 </script>
 </body>
 </html>
+// Avvia la visualizzazione dei prodotti
+renderProducts();
+https://via.placeholder.com/150
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Prodotti</title>
+<style>
+body { font-family:sans-serif; text-align:center; }
+#products { display:flex; flex-wrap:wrap; justify-content:center; }
+.product { background:white; padding:10px; margin:10px; width:150px; }
+.product img { width:100%; }
+</style>
+</head>
+<body>
+<h1>Test Prodotti</h1>
+<div id="products"></div>
+<script>
+const products = [
+  {id:1,name:"Prodotto 1",price:10,img:"https://via.placeholder.com/150"},
+  {id:2,name:"Prodotto 2",price:20,img:"https://via.placeholder.com/150"}
+];
+
+function renderProducts(){
+  const container = document.getElementById('products');
